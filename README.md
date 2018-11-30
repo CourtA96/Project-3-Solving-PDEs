@@ -41,4 +41,5 @@ The FTCS scheme is unconditionally unstable, as shown by the convergence plots. 
 ## Sources
 
 RK2 scheme: http://mathworld.wolfram.com/Runge-KuttaMethod.html
+
 RK3 scheme: https://en.wikiversity.org/wiki/Numerical_Analysis/Order_of_RK_methods/Derivation_of_a_third_order_RK_method
