@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The code in the file "Heat Equation.ipynb" finds the solution to the heat equation with a potential term (𝛽^2)Φ and with no incoming boundary values. It separates the second order PDE into first order PDEs and uses the forward-time-centered-space (FTCS) scheme to compute the solution. It the computes the convergence of the FTCS scheme. The solution is then plotted for different values of 𝛽. The final two sections introduce the solution to Φ'tt = Φ'xx + sin(Φ) and the Runge-Kutta RK3 method for solving the original PDE. RK3 should be unconditionally stable, but there is an error in the code that makes the solution found using this code unstable.
+The code in the file "Heat Equation.ipynb" finds the solution to the heat equation with a potential term (𝛽^2)Φ and with no incoming boundary values, Φ'tt = Φ'xx + (𝛽^2)Φ. It separates the second order PDE into first order PDEs and uses the forward-time-centered-space (FTCS) scheme to compute the solution. It the computes the convergence of the FTCS scheme. The solution is then plotted for different values of 𝛽. The final two sections introduce the solution to Φ'tt = Φ'xx + sin(Φ) and the Runge-Kutta RK3 method for solving the original PDE. RK3 should be unconditionally stable, but there is an error in the code that makes the solution found using this code unstable.
 
 The file "Stability Analysis.pdf" gives a Vonn Neumann stability analysis of the FTCS scheme.
 
