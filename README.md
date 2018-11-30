@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The code in the file "Heat Equation.ipynb" finds the solution to the heat equation with a potential term $\beta^2\Phi$ and with no incoming boundary values. It separates the second order PDE into first order PDEs and uses the forward-time-centered-space (FTCS) scheme to compute the solution. It the computes the convergence of the FTCS scheme. The solution is then plotted for different values of 𝛽. The final two sections introduce the solution to $Φ_{'tt} = Φ_{'xx} + sin(Φ)$ and the Runge-Kutta RK3 method for solving the original PDE. RK3 should be unconditionally stable, but there is an error in the code that makes the solution found using this code unstable.
+The code in the file "Heat Equation.ipynb" finds the solution to the heat equation with a potential term (𝛽^2)Φ and with no incoming boundary values. It separates the second order PDE into first order PDEs and uses the forward-time-centered-space (FTCS) scheme to compute the solution. It the computes the convergence of the FTCS scheme. The solution is then plotted for different values of 𝛽. The final two sections introduce the solution to Φ'tt = Φ'xx + sin(Φ) and the Runge-Kutta RK3 method for solving the original PDE. RK3 should be unconditionally stable, but there is an error in the code that makes the solution found using this code unstable.
 
 The file "Stability Analysis.pdf" gives a Vonn Neumann stability analysis of the FTCS scheme.
 
 ## Results
 
-The stability analysis founds that the FTCS scheme is unconditionally unstable for all $\lambda$.
+The stability analysis founds that the FTCS scheme is unconditionally unstable for all 𝜆.
 
-The following gifs show the FTCS solutions for different values of $\beta$:
+The following gifs show the FTCS solutions for different values of 𝛽:
 
 ![](https://raw.githubusercontent.com/CourtA96/Project-3-Solving-PDEs/master/beta1.gif)
 
@@ -20,7 +20,7 @@ The following gifs show the FTCS solutions for different values of $\beta$:
 
 Comparing the above plots, the solution seems to oscillate more slowly and in a more controlled manner when beta is small. When beta is large, the oscillations are more rapid and the solution quickly gains a large amplitude.
 
-The following plots show the convergence order of the FTCS scheme when $\lambda$, $\beta$ and the number of time steps are varied.
+The following plots show the convergence order of the FTCS scheme when 𝜆, 𝛽 and the number of time steps are varied.
 
 ![](https://raw.githubusercontent.com/CourtA96/Project-3-Solving-PDEs/master/lambda.png)
 
@@ -36,7 +36,7 @@ So the solution slowly becomes less and less convergent as beta increases. The e
 
 ## Conclusion
 
-The FTCS scheme is unconditionally unstable, as shown by the convergence plots. This was expected from the stability caluclations done in the file "Stability Analysis.pdf". The solution to $Φ_{'tt} = Φ_{'xx} + \beta^2Φ$ has oscillations that become more rapid with increasing $\beta$. The solution to $Φ_{'tt} = Φ_{'xx} + sin(Φ)$ is similar to that of the original PDE when $\beta=1$, and was not included in the results here, but is in the file "Heat Equation.ipynb"
+The FTCS scheme is unconditionally unstable, as shown by the convergence plots. This was expected from the stability caluclations done in the file "Stability Analysis.pdf". The solution to Φ′𝑡𝑡=Φ′𝑥𝑥+𝛽2Φ has oscillations that become more rapid with increasing 𝛽. The solution to Φ′𝑡𝑡=Φ′𝑥𝑥+𝑠𝑖𝑛(Φ) is similar to that of the original PDE when 𝛽=1, and was not included in the results here, but is in the file "Heat Equation.ipynb"
 
 ## Sources
 
